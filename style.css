@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0; 
+   box-sizing:border-box;
+}
+
+#navbar{
+   position:sticky;
+   top:0;
+   bottom: 0;
+   left: 0;
+   z-index:100;
+   padding: .5rem 5rem;
+   box-shadow: 5px 5px 20px rgb(0, 0, 0,.5);
+   background-color: black;
+   
+}
+.navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color: crimson !important;
+}
+#navbarSupportedContent a{
+    color: #fff;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid crimson;
+    transition: .3sec;
+}
+
+/*** movies*/
+#movies h1{
+font-size: 50px;
+letter-spacing: 2px;
+font-weight: 700;
+}
+#movies img{
+    width: 200px;
+    height: 200px;
+}
+.card{
+    width: 300px;
+   background: #e5e5e5 !important;
+border: none !important;
+box-shadow: 15px 20px 20px rgba(0, 0, 0,.3),
+            inset 4px 4px 10px white;
+ border-radius: 20px !important;  
+ overflow: hidden;
+ justify-content: center;
+ align-items: center;         
+}
+
+.card:hover{
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0,.3),
+            inset -4px -4px 10px white;
+            transition: .5sec;
+}
+#movies{
+    background-color:firebrick;
+}
+#treadingshow img{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px !important;
+}
+
+#webseries img{
+    width: 300px;
+    height: 200px;
+    border-radius: 30px !important;
+}
+#comdeyshow img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+footer{
+    background-color: black;
+    color: white !important;
+}
+.show{
+    width: 300px;
+   background: #e5e5e5 !important;
+border: none !important;
+box-shadow: 15px 20px 20px rgba(0, 0, 0,.3),
+            inset 4px 4px 10px white;
+ border-radius: 20px !important;  
+ overflow: hidden;
+ justify-content: center;
+ align-items: center;         
+}
+
+.show:hover{
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0,.3),
+            inset -4px -4px 10px lightblue;
+            transition: .5sec;
+            background-color: black !important;
+            color: #fff;
+}
+.dc{
+    width: 300px;
+   background: #e5e5e5 !important;
+border: none !important;
+box-shadow: 15px 20px 20px rgba(0, 0, 0,.3),
+            inset 4px 4px 10px white;
+ border-radius: 20px !important;  
+ overflow: hidden;
+ justify-content: center;
+ align-items: center;         
+}
+
+.dc:hover{
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0,.3),
+            inset -4px -4px 10px lightblue;
+            transition: .5sec;
+            background-color: black !important;
+            color: #fff;
+}
