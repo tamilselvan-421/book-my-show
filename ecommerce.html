@@ -9,6 +9,7 @@
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
     <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">CINEMATIC</a>
@@ -58,8 +59,18 @@
           </class>
         </div>
       </nav>
+      <input id="input" placeholder="add your movie" style="margin-left: 35px; margin-top: 66px;">
+<button onclick="add()" style="margin-left: 13px; margin-top: 22px;">like</button> 
+<ul id="list-container">
+  <li style="list-style-type: none;">
+     <button onclick="deleteiteam(event)" style="margin-top: 34px;">delete</button>
+    </li>
+ 
+</ul>
+
+
 <section id="home" >
-<div class="container">
+<div class="container"></div>
   <div class="row">
     <div class="col-sm-8 col-md-8 col-lg-8">
       <img src="hollywood.jpg">
@@ -298,7 +309,28 @@
 
 </div>
 <footer class="text-center my-9 ">&#169;copyright content</footer>
+</div>
+
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" ></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" ></script>
+
+
+
+
+<script>
+  var ul=document.getElementById("list-container")
+  var input=document.getElementById("input") 
+  function add()
+  {
+    var listiteam=document.createElement("li")
+    listiteam.innerHTML=input.value +"<button onclick='deleteiteam(event)'>delete</button"
+      ul.append(listiteam)
+   }
+
+   function deleteiteam(event)
+   {
+  event.target.parentElement.remove()
+   }
+ </script>
 </body>
 </html>
