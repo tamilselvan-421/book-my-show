@@ -60,10 +60,10 @@
         </div>
       </nav>
       <input id="input" placeholder="add your movie" style="margin-left: 35px; margin-top: 66px;">
-<button onclick="add()" style="margin-left: 13px; margin-top: 22px;">like</button> 
+<button onclick="add()" style="margin-left: 13px; margin-top: 22px;background-color: transparent; width: 45px;">like</button> 
 <ul id="list-container">
   <li style="list-style-type: none;">
-     <button onclick="deleteiteam(event)" style="margin-top: 34px;">delete</button>
+    
     </li>
  
 </ul>
@@ -165,7 +165,7 @@
 
 <section id="treadingshow">
  <div class="container m-5">
-  <a href="#" class="card-link m-5">see more </a>
+  <a href="https://www.imdb.com/chart/top/" target="_parent" class="card-link m-5">see more </a>
   <h1 class="text-center my-5" id="ha">treading show</h1>
   <div class="row">
     <div class="col-lg-4 col-md col-12  p-2 my-2">
@@ -212,7 +212,7 @@
 
 <section id="webseries">
   <div class="container m-5">
-    <a href="#" class="card-link m-5">see more</a>
+    <a href="https://en.wikipedia.org/wiki/List_of_programs_broadcast_by_Star_Vijay" target="_parent" class="card-link m-5">see more</a>
     <h1 class="text-center my-5" id="ha">webseries</h1>
     <div class="row">
       <div class="col-lg-4 col-md col-12  p-2 my-2">
@@ -251,7 +251,7 @@
 </section>
 
 <section id="musicshow">
-  <a href="#" class="card-link m-5">see more</a>
+  <a href="https://en.wikipedia.org/wiki/List_of_television_series_based_on_DC_Comics_publications" class="card-link m-5">see more</a>
   <h1 class="text-center my-5" id="ha">music show</h1>
   <div class="container m-5">
   <div class="card mb-3" style="max-width: 540px;">
@@ -273,7 +273,7 @@
  
 </div>
 </div>
-<a href="#" class="card-link m-5">see more</a>
+<a href="https://gaana.com/playlist/gaana-dj-tamil-top-50-2" class="card-link m-5">see more</a>
 </section>
 <!--comdeyshow-->
 <section id="comdeyshow">
@@ -297,7 +297,7 @@
     </div>
   </div>
   
-  <a href="#" class="card-link m-5">see more</a>
+  <a href="https://www.ranker.com/list/best-british-comedy-tv-shows/ranker-tv" class="card-link m-5">see more</a>
 </section>
 
 <form class=" container">
@@ -323,8 +323,10 @@
   function add()
   {
     var listiteam=document.createElement("li")
-    listiteam.innerHTML=input.value +"<button onclick='deleteiteam(event)'>delete</button"
+    listiteam.innerHTML=input.value +"<button onclick='deleteiteam(event)'>delete</button>"
       ul.append(listiteam)
+      ul.style.listStyleType="none"
+    
    }
 
    function deleteiteam(event)
